@@ -228,4 +228,35 @@ book.setPrice(18);
 console.log(book.getPrice());
 
 
+class Persons {
+    private name: string;
+    private age: number;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+
+    getName(): string {
+        return this.name;
+    }
+
+    setName(name: string): void {
+        this.name = name;
+    }
+
+    getAge(): number {
+        return this.age;
+    }
+
+    setAge(age: number): void {
+        if (age >= 0) {
+            this.age = age;
+        } else {
+            console.log("Invalid age");
+        }
+    }
+}
+
+
 
